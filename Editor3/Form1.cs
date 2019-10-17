@@ -22,7 +22,7 @@ namespace Editor3
 
         }
 
-        private void open_Click(object sender, EventArgs e)
+        private void open_Click(object sender, EventArgs e) //opens the selected file and puts it on the richtextbox.
         {
             DialogResult dialogResult = openFileDialog1.ShowDialog();
             if (dialogResult == DialogResult.OK)
@@ -31,7 +31,7 @@ namespace Editor3
             }
         }
 
-        private void saveAs_Click(object sender, EventArgs e)
+        private void saveAs_Click(object sender, EventArgs e) //Saves the text on richtextbox onto a file.
         {
             DialogResult dialogResult = saveFileDialog1.ShowDialog();
             if (dialogResult == DialogResult.OK)
@@ -40,7 +40,7 @@ namespace Editor3
             }
         }
 
-        private void exit_Click(object sender, EventArgs e)
+        private void exit_Click(object sender, EventArgs e) //shuts program down
         {
             Application.Exit();
         }
